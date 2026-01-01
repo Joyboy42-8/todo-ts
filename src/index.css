@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import "tailwindcss";
+@plugin "daisyui";
+
+* {
+  font-family: "Roboto Slab";
+}
+
+.Layout {
+  @apply flex flex-col h-screen gap-5 bg-linear-to-br 
+  from-slate-900 via-slate-800 to-indigo-900;
+}
+
+.Header {
+  @apply flex justify-center items-center py-5 mt-10;
+}
+
+.Title {
+  @apply text-6xl text-white font-bold text-center;
+}
+
+.Footer {
+  @apply flex justify-center items-center p-5;
+}
+
+.Copyright {
+  @apply text-8xl opacity-20 text-accent/70;
+}
+
+.Form {
+  @apply flex items-center gap-4 p-4 rounded-2xl
+    bg-white/10 backdrop-blur-md
+    border border-white/20
+    shadow-xl;
+}
+
+.Input {
+  @apply flex-1 px-4 py-2 rounded-xl
+    bg-white/20 text-white placeholder-white/60
+    outline-none
+    border border-white/30
+    focus:border-accent focus:ring-2 focus:ring-accent/40
+    transition;
+}
+
+.SubmitBtn {
+    @apply px-5 py-2 rounded-xl
+    bg-accent/80 text-white font-medium
+    hover:bg-accent
+    transition
+    shadow-md
+    cursor-pointer;
+}
+
+.TaskContainer {
+    @apply flex flex-col gap-2 list-none;
+}
+
+.Task {
+    @apply flex justify-between items-center
+    px-6 py-3 rounded-xl
+    bg-white/10 backdrop-blur-md
+    border border-white/20
+    shadow-lg shadow-black/10
+    hover:bg-white/20
+    transition-all duration-300;
+}
+
+.Text {
+    @apply text-white/90 font-medium;
+}
+
+.DeleteBtn {
+    @apply p-2 rounded-lg cursor-pointer
+    bg-white/10 hover:bg-red-500/20 transition;
+}
+
+.Trash {
+    @apply text-red-400;
+}
