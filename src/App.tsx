@@ -39,7 +39,7 @@ export default function App() {
   };
 
   const contextValue = {
-    input,j
+    input,
     setInput,
     tasks,
     setTasks,
