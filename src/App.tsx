@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 export default function App() {
   const savedTasks = localStorage.getItem("tasks");
   const parsedTasks: Task[] = savedTasks ? JSON.parse(savedTasks) : [];
-  
+
   const [tasks, setTasks] = useState<Task[]>(parsedTasks);
   const [input, setInput] = useState("");
 
@@ -39,7 +39,7 @@ export default function App() {
   };
 
   const contextValue = {
-    input,
+    input,j
     setInput,
     tasks,
     setTasks,
