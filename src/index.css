@@ -7,7 +7,7 @@
 }
 
 body {
-  @apply overflow-hidden h-screen;
+  @apply overflow-x-hidden min-h-screen;
 }
 
 .Layout {
