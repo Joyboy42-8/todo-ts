@@ -1,6 +1,7 @@
 import type React from "react";
 import { useContext, useRef, useEffect } from "react";
 import { TaskContext } from "../context/TaskContext";
+import { motion } from "framer-motion";
 
 export default function MakeForm() {
   const { input } = useContext(TaskContext);
@@ -17,11 +18,14 @@ export default function MakeForm() {
   }, []);
 
   return (
-    <form onSubmit={handleSubmit} className="Form">
+    <motion.form onSubmit={handleSubmit} className="Form"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
+    >
       <input type="text" placeholder="Enter a task..."
         value={input} ref={inputRef} onChange={handleChange} className="Input"
       />
       <button type="submit" className="SubmitBtn">Add</button>
-    </form>
+    </motion.form>
   );
 }

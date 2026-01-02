@@ -11,12 +11,12 @@ body {
 }
 
 .Layout {
-  @apply flex flex-col h-screen w-full gap-5 bg-linear-to-br 
+  @apply flex flex-col h-screen w-full bg-linear-to-br 
   from-slate-900 via-slate-800 to-indigo-900;
 }
 
 .Header {
-  @apply flex justify-center items-center py-5 mt-10;
+  @apply flex justify-center items-center py-5;
 }
 
 .Title {
