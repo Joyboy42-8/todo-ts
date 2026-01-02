@@ -3,7 +3,7 @@ import TasksContainer from "../components/TasksContainer";
 
 export default function Main() {  
     return(
-        <main className="grow overflow-y-auto flex flex-col gap-5 px-2 w-xl mx-auto">
+        <main className="Main">
             <MakeForm />
             <TasksContainer />
         </main>

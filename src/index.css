@@ -6,8 +6,12 @@
   font-family: "Roboto Slab";
 }
 
+body {
+  @apply overflow-hidden h-screen;
+}
+
 .Layout {
-  @apply flex flex-col h-screen gap-5 bg-linear-to-br 
+  @apply flex flex-col h-screen w-full gap-5 bg-linear-to-br 
   from-slate-900 via-slate-800 to-indigo-900;
 }
 
@@ -16,7 +20,7 @@
 }
 
 .Title {
-  @apply text-6xl text-white font-bold text-center;
+  @apply text-4xl md:text-6xl text-white font-bold text-center;
 }
 
 .Footer {
@@ -24,7 +28,11 @@
 }
 
 .Copyright {
-  @apply text-8xl opacity-20 text-accent/70;
+  @apply text-5xl md:text-8xl opacity-20 text-accent/70;
+}
+
+.Main {
+  @apply grow overflow-y-auto flex flex-col gap-5 px-2 md:w-xl mx-auto;
 }
 
 .Form {
