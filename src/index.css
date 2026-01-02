@@ -11,7 +11,7 @@ body {
 }
 
 .Layout {
-  @apply flex flex-col h-screen w-full bg-linear-to-br 
+  @apply flex flex-col min-h-screen w-full bg-linear-to-br 
   from-slate-900 via-slate-800 to-indigo-900;
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 .Main {
-  @apply grow overflow-y-auto flex flex-col gap-5 px-2 md:w-xl mx-auto;
+  @apply grow flex flex-col gap-5 px-2 md:w-xl mx-auto;
 }
 
 .Form {
